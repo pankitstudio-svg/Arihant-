@@ -1,0 +1,149 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#6a11cb,#2575fc);
+    color:white;
+    text-align:center;
+    overflow-x:hidden;
+}
+
+/* Hero Section */
+.hero{
+    padding:60px 20px;
+}
+
+.hero h1{
+    font-size:50px;
+    color:#FFD700;
+    text-shadow:0 0 20px #FFD700;
+    animation:glow 2s infinite alternate;
+}
+
+.subtitle{
+    margin:20px 0;
+    font-size:22px;
+}
+
+@keyframes glow{
+    from{
+        text-shadow:0 0 10px #FFD700;
+    }
+    to{
+        text-shadow:0 0 30px #FFEA00;
+    }
+}
+
+/* Profile Image */
+.profile{
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:50%;
+    border:6px solid white;
+    box-shadow:0 0 25px rgba(255,255,255,.8);
+    margin:30px 0;
+}
+
+/* Button */
+button{
+    padding:15px 35px;
+    border:none;
+    border-radius:40px;
+    font-size:20px;
+    background:#ff4081;
+    color:white;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    transform:scale(1.08);
+    background:#e91e63;
+}
+
+/* Sections */
+section{
+    width:90%;
+    max-width:900px;
+    margin:40px auto;
+    background:rgba(255,255,255,.12);
+    padding:30px;
+    border-radius:20px;
+    backdrop-filter:blur(8px);
+}
+
+.message p{
+    font-size:20px;
+    line-height:1.8;
+}
+
+/* Gallery */
+.images{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:20px;
+}
+
+.images img{
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:20px;
+    transition:.4s;
+}
+
+.images img:hover{
+    transform:scale(1.08);
+}
+
+/* Surprise */
+#gift{
+    display:none;
+    font-size:24px;
+    color:#FFE082;
+}
+
+/* Footer */
+footer{
+    margin:50px;
+    font-size:18px;
+    color:#f5f5f5;
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+.hero h1{
+    font-size:35px;
+}
+
+.subtitle{
+    font-size:18px;
+}
+
+.profile{
+    width:170px;
+    height:170px;
+}
+
+.images img{
+    width:150px;
+    height:150px;
+}
+
+.message p{
+    font-size:18px;
+}
+
+button{
+    width:90%;
+}
+
+}
